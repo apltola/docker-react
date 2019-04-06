@@ -17,6 +17,6 @@ after_success:
   # First login to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push aleksijaakkojuhani/multi-client
-  - docker build -t aleksijaakkojuhani/multi-nginx
-  - docker build -t aleksijaakkojuhani/multi-server
-  - docker build -t aleksijaakkojuhani/multi-worker
+  - docker push aleksijaakkojuhani/multi-nginx
+  - docker push aleksijaakkojuhani/multi-server
+  - docker push aleksijaakkojuhani/multi-worker
