@@ -44,7 +44,7 @@ const Fib = () => {
     for (let key in values) {
       entries.push(
         <div key={key}>
-          for index {key} I calculated value {values[key]}
+          Fibonacci number for index {key} => {values[key]}
         </div>
       )
     }
